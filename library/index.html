@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mini Library System | Mohan Mittapally</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="container">
+  <header class="hero">
+    <p class="eyebrow">PYTHON PROJECT · WEB DEMO</p>
+    <h1>Mini Library System</h1>
+    <p>A small, interactive book shelf inspired by my Python OOP project.</p>
+    <p class="byline">Built by Mohan Mittapally · <a href="https://github.com/mohanmitta097/Library-" target="_blank" rel="noopener">Python repository</a></p>
+  </header>
+  <section class="stats" aria-label="Library summary">
+    <div class="stat"><span id="titleCount">0</span><small>Book titles</small></div>
+    <div class="stat"><span id="copyCount">0</span><small>Available copies</small></div>
+  </section>
+  <section class="panel">
+    <h2>Add a book</h2>
+    <form id="bookForm" class="form">
+      <label>Title<input id="titleInput" type="text" placeholder="e.g. Python Basics" required maxlength="100"></label>
+      <label>Author<input id="authorInput" type="text" placeholder="e.g. A. Teacher" required maxlength="100"></label>
+      <label>Copies<input id="copiesInput" type="number" value="1" min="1" max="999" required></label>
+      <button type="submit">Add book</button>
+    </form>
+    <p id="message" class="message" role="status" aria-live="polite"></p>
+  </section>
+  <section class="panel">
+    <div class="section-heading"><h2>Books on the shelf</h2><button id="resetButton" class="secondary" type="button">Reset demo</button></div>
+    <div id="shelf" class="shelf"></div>
+  </section>
+  <section class="panel">
+    <h2>How the Python project works</h2>
+    <ul>
+      <li><strong>Book:</strong> stores a title, author, and private copy count.</li>
+      <li><strong>Library:</strong> adds books, combines matching titles, and manages borrowing and returns.</li>
+      <li><strong>JSON:</strong> saves and reloads structured book data.</li>
+      <li><strong>CSV:</strong> exports book details in rows and columns.</li>
+      <li><strong>Exceptions:</strong> help report missing books and unavailable copies.</li>
+    </ul>
+    <p class="note">This webpage demo stores changes in memory while the page is open. It does not change the Python files on GitHub.</p>
+  </section>
+  <footer>HTML · CSS · JavaScript · <a href="https://github.com/mohanmitta097/Library-" target="_blank" rel="noopener">View Python project on GitHub</a></footer>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
