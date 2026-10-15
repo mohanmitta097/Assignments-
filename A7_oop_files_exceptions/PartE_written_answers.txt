@@ -1,0 +1,14 @@
+1. Why use a private __marks attribute?
+It helps protect the marks from being changed directly without validation. The set_marks method checks that marks are between 0 and 100.
+
+2. Why use __str__?
+It provides a readable description when a Student object is printed.
+
+3. What is the difference between CSV and JSON?
+CSV stores tabular rows and columns. JSON can store structured data such as lists and dictionaries.
+
+4. Why use try/except/finally?
+try contains the operation that may fail, except handles specific errors, and finally runs whether an error occurs or not.
+
+Voice note reminder:
+Record a voice note under 60 seconds explaining how write_student_files writes student information to text, CSV, and JSON files.
